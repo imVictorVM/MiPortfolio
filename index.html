@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPortfolio | Mis Videojuegos</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Header-->
+      <header>
+        <div class="logo">My<span>Portfolio</span></div>
+        <div class="header-actions">
+          <button id="lang-toggle" class="lang-btn">
+            <span class="lang-es">EN / <strong>ES</strong></span>
+            <span class="lang-en hidden"><strong>EN</strong> / ES</span>
+          </button>
+          <nav class="social-links">
+            <a
+              href="https://github.com/imVictorVM"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/victor-v-m" aria-label="LinkedIn" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <!--Intro Section-->
+      <section class="intro">
+        <h1 class="lang-es">Desarrollador de Videojuegos</h1>
+        <h1 class="lang-en hidden">Videogame Developer</h1>
+        <p class="lang-es">
+          Hola, soy Víctor. Estudiante de Desarrollo de Videojuegos en la
+          Universidad Complutense de Madrid. Esta es una colección de mis
+          mejores proyectos.
+        </p>
+        <p class="lang-en hidden">
+          Hi, I'm Victor. I'm a Game Development student at Complutense
+          University of Madrid. This is a collection of my best projects.
+        </p>
+      </section>
+
+      <!--CATEGORÍA: PROYECTOS UNIVERSITARIOS-->
+      <section class="category-section">
+        <h2 class="section-title lang-es">Proyectos Universitarios</h2>
+        <h2 class="section-title lang-en hidden">University Projects</h2>
+
+        <div class="games-grid">
+          <!--Theatrum Mundi-->
+          <article class="game-card">
+            <div
+              class="game-image"
+              style="background-image: url('img/TheatrumMundi.png')"
+            >
+              <span class="platform-badge">PC</span>
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Theatrum Mundi</h3>
+              <p class="game-short-desc lang-es">
+                Novela visual de misterio y puzzles desarrollada en C++.
+              </p>
+              <p class="game-short-desc lang-en hidden">
+                Visual novel mystery and puzzle game developed in C++.
+              </p>
+
+              <button class="details-btn" onclick="openModal(this)">
+                <span class="lang-es">+ Info</span>
+                <span class="lang-en hidden">+ Info</span>
+              </button>
+
+              <div class="hidden-data">
+                <div class="data-desc-es">
+                  Desarrollado para la asignatura Proyecto 2 del grado de
+                  desarrollo de videojuegos de la UCM.<br />
+                  En este juego estilo novela visual tendrás que resolver
+                  puzzles para descubrir la verdad detrás de posibles
+                  asesinatos.
+                </div>
+                <div class="data-desc-en">
+                  Developed for the Project 2 course of the videogame
+                  development degree at UCM.<br />
+                  In this visual novel-style game, you'll have to solve puzzles
+                  to uncover the truth behind possible murders.
+                </div>
+                <div class="data-role-es">
+                  <strong>Mi Rol:</strong> Participacion en el diseño del juego.
+                  Desarrollo del tutorial e integración de puzzles en el juego.
+                  Composición y producción de los temas musicales del menú
+                  principal, la entresala y la tercera pantalla.
+                </div>
+                <div class="data-role-en">
+                  <strong>My Role:</strong> Participation in game design.
+                  Development of the tutorial and integration of puzzles into
+                  the game. Composition and production of the musical themes for
+                  the main menu, the foyer, and the third screen.
+                </div>
+                <div class="data-tech">C++ / SDL2</div>
+                <div class="data-link">
+                  https://imvictorvm.itch.io/theatrumundi
+                </div>
+                <div class="data-img">img/TheatrumMundi.png</div>
+              </div>
+            </div>
+          </article>
+
+          <!--Subterra-->
+          <article class="game-card">
+            <div
+              class="game-image"
+              style="background-image: url('img/Subterra.png')"
+            >
+              <span class="platform-badge">PC</span>
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Subterra</h3>
+              <p class="game-short-desc lang-es">
+                Juego de exploración, gestión de recursos y supervivencia
+                desarrollado en Unity.
+              </p>
+              <p class="game-short-desc lang-en hidden">
+                Exploration, resource management and survival game developed in
+                Unity.
+              </p>
+
+              <button class="details-btn" onclick="openModal(this)">
+                <span class="lang-es">+ Info</span>
+                <span class="lang-en hidden">+ Info</span>
+              </button>
+
+              <div class="hidden-data">
+                <div class="data-desc-es">
+                  Desarrollado para la asignatura Proyecto 1 del grado de
+                  desarrollo de videojuegos de la UCM.<br />
+                  En este juego de recolección de recursos y exploración
+                  llevarás tu nave taladro hacia el centro del planeta, huyendo
+                  de un peligroso micelio corrosivo.
+                </div>
+                <div class="data-desc-en">
+                  Developed for the Project 1 course of the videogame
+                  development degree at UCM.<br />
+                  In this resource gathering and exploration game, you'll pilot
+                  your drill ship to the planet's core, fleeing from a dangerous
+                  corrosive mycelium.
+                </div>
+                <div class="data-role-es">
+                  <strong>Mi Rol:</strong> Participacion en el diseño del juego.
+                  Desarrollo de sistemas de trampas y sistema de UI. Escritura
+                  de la historia. Composición y producción de los temas
+                  musicales.
+                </div>
+                <div class="data-role-en">
+                  <strong>My Role:</strong> Participation in game design.
+                  Development of cheat systems and UI system. Story writing.
+                  Composition and production of musical themes.
+                </div>
+                <div class="data-tech">C# / Unity</div>
+                <div class="data-link">https://chichord.itch.io/subterra</div>
+                <div class="data-img">img/Subterra.png</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--CATEGORÍA: GAME JAMS-->
+      <section class="category-section">
+        <h2 class="section-title lang-es">Game Jams</h2>
+        <h2 class="section-title lang-en hidden">Game Jams</h2>
+
+        <div class="games-grid">
+          <!--Cortejos Enramados-->
+          <article class="game-card">
+            <div
+              class="game-image"
+              style="background-image: url('img/CortejosEnramados.png')"
+            >
+              <span class="platform-badge">Web</span>
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Cortejos Enramados</h3>
+              <p class="game-short-desc lang-es">
+                Juego humorístico 1v1 sobre ligar con ramas.
+              </p>
+              <p class="game-short-desc lang-en hidden">
+                Humorous 1v1 game about flirting with branches.
+              </p>
+              <button class="details-btn" onclick="openModal(this)">
+                <span class="lang-es">+ Info</span>
+                <span class="lang-en hidden">+ Info</span>
+              </button>
+
+              <div class="hidden-data">
+                <div class="data-desc-es">
+                  Juego desarrollado para la ComJamOn 2025.<br />
+                  Tema: Ramas.<br />
+                  En este humorístico 1v1 sobre ligar con ramas de árboles,
+                  deberás pelear con un amigo para conquistar a distintas ramas
+                  y quizás lograr que se transformen en ninfas.
+                </div>
+                <div class="data-desc-en">
+                  Game developed for ComJamOn 2025.<br />
+                  Theme: Branches.<br />
+                  In this humorous 1v1 game about flirting with tree branches,
+                  you'll have to fight with a friend to win over different
+                  branches and maybe even transform them into nymphs.
+                </div>
+                <div class="data-role-es">
+                  <strong>Mi Rol:</strong> Participacion en el diseño del juego.
+                  Participación en el desarrollo de sistemas de diálogo.
+                  Participación en la escritura de diálogos. Composición y
+                  producción de los temas musicales.
+                </div>
+                <div class="data-role-en">
+                  <strong>My Role:</strong> Participation in game design.
+                  Participation in the development of dialogue systems.
+                  Participation in dialogue writing. Composition and production
+                  of musical themes.
+                </div>
+                <div class="data-tech">JavaScript / Phaser</div>
+                <div class="data-link">
+                  https://imvictorvm.itch.io/cortejosenramados
+                </div>
+                <div class="data-img">img/CortejosEnramados.png</div>
+              </div>
+            </div>
+          </article>
+
+          <!--Bubble TeAlien-->
+          <article class="game-card">
+            <div
+              class="game-image"
+              style="background-image: url('img/BubbleTeAlien.png')"
+            >
+              <span class="platform-badge">PC</span>
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Bubble TeAlien</h3>
+              <p class="game-short-desc lang-es">
+                Gestión de cafetería con DEMASIADO humor.
+              </p>
+              <p class="game-short-desc lang-en hidden">
+                Coffee shop management with TOO MUCH humor.
+              </p>
+              <button class="details-btn" onclick="openModal(this)">
+                <span class="lang-es">+ Info</span>
+                <span class="lang-en hidden">+ Info</span>
+              </button>
+              <div class="hidden-data">
+                <div class="data-desc-es">
+                  Juego desarrollado para la Global Game Jam 2025.<br />
+                  Tema: Burbujas.<br />
+                  Gestiona una cafetería que roza lo absurdo atendiendo a
+                  personas normales y evitando vender café a extraterrestres
+                  disparándoles con, ¿leche...?.
+                </div>
+                <div class="data-desc-en">
+                  Game developed for the Global Game Jam 2025.<br />
+                  Theme: Bubbles.<br />
+                  Manage a coffee shop that borders on the absurd, serving
+                  normal people and avoiding selling coffee to aliens by
+                  shooting them with, milk...?
+                </div>
+                <div class="data-role-es">
+                  <strong>Mi Rol:</strong> Participacion en el diseño del juego.
+                  Modelado del escenario. Participación en la escritura de
+                  diálogos. Composición y producción de los temas musicales.
+                </div>
+                <div class="data-role-en">
+                  <strong>My Role:</strong> Participation in game design.
+                  Scenario modeling. Participation in dialogue writing.
+                  Composition and production of musical themes.
+                </div>
+                <div class="data-tech">C# / Unity</div>
+                <div class="data-link">
+                  https://deleitaditos.itch.io/bubble-tealien
+                </div>
+                <div class="data-img">img/BubbleTeAlien.png</div>
+              </div>
+            </div>
+          </article>
+
+          <!--Spinning Spider-->
+          <article class="game-card">
+            <div
+              class="game-image"
+              style="background-image: url('img/SpinningSpider.png')"
+            >
+              <span class="platform-badge">PC</span>
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Spinning Spider</h3>
+              <p class="game-short-desc lang-es">
+                Endless runner de una araña que gira.
+              </p>
+              <p class="game-short-desc lang-en hidden">
+                Endless runner of a spinning spider.
+              </p>
+              <button class="details-btn" onclick="openModal(this)">
+                <span class="lang-es">+ Info</span>
+                <span class="lang-en hidden">+ Info</span>
+              </button>
+              <div class="hidden-data">
+                <div class="data-desc-es">
+                  Juego desarrollado para la ComJamOn 2024.<br />
+                  Tema: Líneas rojas.<br />
+                  Ayuda a la araña Patraña a sobrevivir en el bosque con la
+                  ayuda de su amigo Facundo el caracol, girando mucho para
+                  evitar a los enemigos.
+                </div>
+                <div class="data-desc-en">
+                  Game developed for the ComJamOn 2024.<br />
+                  Theme: Red Lines.<br />
+                  Help Patraña the spider survive in the forest with the help of
+                  her friend Facundo the snail, spinning a lot to avoid enemies.
+                </div>
+                <div class="data-role-es">
+                  <strong>Mi Rol:</strong> Participacion en el diseño del juego.
+                  Participación en el desarrollo de habilidades y mejoras.
+                  Desarrollo de los sistemas de UI.
+                </div>
+                <div class="data-role-en">
+                  <strong>My Role:</strong> Participation in game design.
+                  Participation in skill development and power ups. UI system
+                  development.
+                </div>
+                <div class="data-tech">C# / Unity</div>
+                <div class="data-link">
+                  https://diegocaballero.itch.io/spinning-spider
+                </div>
+                <div class="data-img">img/SpinningSpider.png</div>
+              </div>
+            </div>
+          </article>
+
+          <!--Friends with the fire-->
+          <article class="game-card">
+            <div
+              class="game-image"
+              style="background-image: url('img/FriendsWithTheFire.png')"
+            >
+              <span class="platform-badge">PC</span>
+            </div>
+            <div class="game-content">
+              <h3 class="game-title">Friends with the Fire</h3>
+              <p class="game-short-desc lang-es">
+                Prototipo de juego de supervivencia.
+              </p>
+              <p class="game-short-desc lang-en hidden">
+                Survival game prototype.
+              </p>
+              <button class="details-btn" onclick="openModal(this)">
+                <span class="lang-es">+ Info</span>
+                <span class="lang-en hidden">+ Info</span>
+              </button>
+              <div class="hidden-data">
+                <div class="data-desc-es">
+                  Juego desarrollado para la Cozy Winter Jam 2023.<br />
+                  Tema: Mejor juntos.<br />
+                  En un bosque oscuro, un pequeño tronco lucha contra sus
+                  agresores, los grandes y aterradores árboles, Usando el fuego
+                  para defenderse.
+                </div>
+                <div class="data-desc-en">
+                  Game developed for the Cozy Winter Jam 2023.<br />
+                  Theme: Better Together.<br />
+                  n a dark forest, a small tree trunk fights against its
+                  aggressors, the large and terrifying trees, using fire to
+                  defend itself.
+                </div>
+                <div class="data-role-es">
+                  <strong>Mi Rol:</strong> Participacion en el diseño del juego.
+                  Participación en el desarrollo de sistemas de movimiento.
+                  Desarrollo de los sistemas de UI. Participación en el arte del
+                  juego y animaciones.
+                </div>
+                <div class="data-role-en">
+                  <strong>My Role:</strong> Participation in game design.
+                  Participation in the development of movement systems.
+                  Development of UI systems. Participation in game art and
+                  animations.
+                </div>
+                <div class="data-tech">C# / Unity</div>
+                <div class="data-link">
+                  https://ikerjum.itch.io/friends-with-the-fire
+                </div>
+                <div class="data-img">img/FriendsWithTheFire.png</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--CATEGORÍA: OTROS-->
+      <section class="category-section">
+        <h2 class="section-title lang-es">Otros Proyectos</h2>
+        <h2 class="section-title lang-en hidden">Other Projects</h2>
+        <h3 class="coming-soon lang-es">Trabajando en proyectos personales</h3>
+        <h3 class="coming-soon lang-en hidden">Working on personal projects</h3>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Víctor Valenzuela Martínez.
+      </p>
+    </footer>
+
+    <!--MODAL / Ventana Flotante-->
+    <div id="project-modal" class="modal-overlay" onclick="closeModal(event)">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal(event)">&times;</button>
+        <div class="modal-header">
+          <img src="" alt="Game Image" id="modal-img" />
+          <span id="modal-tech" class="modal-tech-badge">Engine</span>
+        </div>
+        <div class="modal-body">
+          <h2 id="modal-title">Titulo Juego</h2>
+          <div class="modal-info-block">
+            <p id="modal-desc" class="modal-description">Descripción...</p>
+          </div>
+          <div class="modal-info-block role-block">
+            <p id="modal-role" class="modal-role">Rol...</p>
+          </div>
+          <a
+            href="#"
+            id="modal-link"
+            class="download-btn modal-action-btn"
+            target="_blank"
+          >
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span class="lang-es">Jugar / Descargar</span>
+            <span class="lang-en hidden">Play / Download</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

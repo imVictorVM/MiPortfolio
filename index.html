@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyPortfolio | Mis Videojuegos</title>
+    <title>MiPortfolio | Mis Videojuegos</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/victor.png" />
   </head>
   <body>
     <div class="container">
       <!--Header-->
       <header>
-        <div class="logo">My<span>Portfolio</span></div>
+        <div class="logo">
+          <span class="lang-es">Mi<span>Portfolio</span></span>
+          <span class="lang-en hidden">My<span>Portfolio</span></span>
+        </div>
         <div class="header-actions">
           <button id="lang-toggle" class="lang-btn">
             <span class="lang-es">EN / <strong>ES</strong></span>
@@ -68,6 +72,9 @@
 
       <!--Intro Section-->
       <section class="intro">
+        <div class="profile-container">
+          <img src="img/victor.png" alt="Víctor" class="profile-img" />
+        </div>
         <h1 class="lang-es">Desarrollador de Videojuegos y Compositor</h1>
         <h1 class="lang-en hidden">Videogame Developer and Composer</h1>
         <p class="lang-es">
@@ -80,7 +87,24 @@
         </p>
       </section>
 
-      <!--CATEGORÍA: PROYECTOS UNIVERSITARIOS-->
+      <!-- Tab Navigation -->
+      <nav class="tabs-nav">
+        <button class="tab-btn active" data-tab="games">
+          <span class="lang-es">Videojuegos</span>
+          <span class="lang-en hidden">Video Games</span>
+        </button>
+        <button class="tab-btn" data-tab="music">
+          <span class="lang-es">Música</span>
+          <span class="lang-en hidden">Music</span>
+        </button>
+        <button class="tab-btn" data-tab="cv">
+          <span class="lang-es">Currículum</span>
+          <span class="lang-en hidden">CV</span>
+        </button>
+      </nav>
+
+      <div id="games-tab" class="tab-content active">
+        <!--CATEGORÍA: PROYECTOS UNIVERSITARIOS-->
       <section class="category-section">
         <h2 class="section-title lang-es">Proyectos Universitarios</h2>
         <h2 class="section-title lang-en hidden">University Projects</h2>
@@ -634,6 +658,149 @@
         <h3 class="coming-soon lang-es">Trabajando en proyectos personales</h3>
         <h3 class="coming-soon lang-en hidden">Working on personal projects</h3>
       </section>
+      </div> <!-- End #games-tab -->
+
+      <div id="music-tab" class="tab-content">
+        <!-- CATEGORÍA: COMPOSICIONES -->
+        <section class="category-section">
+          <h2 class="section-title lang-es">Composiciones y Producción</h2>
+          <h2 class="section-title lang-en hidden">Compositions & Production</h2>
+          
+          <div class="music-grid">
+            <!-- Cortejos Enramados -->
+            <article class="music-card">
+              <div class="music-embed-container">
+                <iframe style="border: 0; width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1839898600/size=large/bgcol=1e293b/linkcol=3b82f6/tracklist=false/transparent=true/" seamless>
+                  <a href="https://imvictorvm.bandcamp.com/album/cortejos-enramados-ost">Cortejos Enramados OST de VictorVM</a>
+                </iframe>
+              </div>
+              <div class="music-info">
+                <h3 class="music-title">Cortejos Enramados OST</h3>
+                <p class="music-desc lang-es">Banda sonora original para 'Cortejos Enramados'.</p>
+                <p class="music-desc lang-en hidden">Original soundtrack for 'Cortejos Enramados'.</p>
+              </div>
+            </article>
+
+            <!-- Bubble TeAlien -->
+            <article class="music-card">
+              <div class="music-embed-container">
+                <iframe style="border: 0; width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=132623707/size=large/bgcol=1e293b/linkcol=3b82f6/tracklist=false/transparent=true/" seamless>
+                  <a href="https://imvictorvm.bandcamp.com/album/bubble-tealien-ost">Bubble TeAlien OST de VictorVM</a>
+                </iframe>
+              </div>
+              <div class="music-info">
+                <h3 class="music-title">Bubble TeAlien OST</h3>
+                <p class="music-desc lang-es">Banda sonora original para 'Bubble TeAlien'.</p>
+                <p class="music-desc lang-en hidden">Original soundtrack for 'Bubble TeAlien'.</p>
+              </div>
+            </article>
+
+            <!-- First -->
+            <article class="music-card">
+              <div class="music-embed-container">
+                <iframe style="border: 0; width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=4243329848/size=large/bgcol=1e293b/linkcol=3b82f6/tracklist=false/transparent=true/" seamless>
+                  <a href="https://imvictorvm.bandcamp.com/album/first-ost">First OST de VictorVM</a>
+                </iframe>
+              </div>
+              <div class="music-info">
+                <h3 class="music-title">First OST</h3>
+                <p class="music-desc lang-es">Banda sonora original para el juego educativo 'First'.</p>
+                <p class="music-desc lang-en hidden">Original soundtrack for the educational game 'First'.</p>
+              </div>
+            </article>
+
+            <!-- Picate -->
+            <article class="music-card">
+              <div class="music-embed-container">
+                <iframe style="border: 0; width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/track=3560384623/size=large/bgcol=1e293b/linkcol=3b82f6/tracklist=false/transparent=true/" seamless>
+                  <a href="https://imvictorvm.bandcamp.com/track/picate-main-theme">Picate Main Theme de VictorVM</a>
+                </iframe>
+              </div>
+              <div class="music-info">
+                <h3 class="music-title">Picate Main Theme</h3>
+                <p class="music-desc lang-es">Tema principal para el juego competitivo 'Pícate'.</p>
+                <p class="music-desc lang-en hidden">Main theme for the competitive game 'Pícate'.</p>
+              </div>
+            </article>
+
+            <!-- At The End of the Link -->
+            <article class="music-card">
+              <div class="music-embed-container">
+                <iframe style="border: 0; width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1356843329/size=large/bgcol=1e293b/linkcol=3b82f6/tracklist=false/transparent=true/" seamless>
+                  <a href="https://imvictorvm.bandcamp.com/album/at-the-end-of-the-link-ost">At the End of the Link OST de VictorVM</a>
+                </iframe>
+              </div>
+              <div class="music-info">
+                <h3 class="music-title">At the End of the Link OST</h3>
+                <p class="music-desc lang-es">Banda sonora original para 'At the End of the Link'.</p>
+                <p class="music-desc lang-en hidden">Original soundtrack for 'At the End of the Link'.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="music-footer">
+            <p class="lang-es">Toda la música disponible en:</p>
+            <p class="lang-en hidden">All the music available at:</p>
+            <div class="music-links">
+              <a href="https://soundcloud.com/imvictorvm" target="_blank" class="custom-follow-btn">SoundCloud</a>
+              <a href="https://imvictorvm.bandcamp.com" target="_blank" class="custom-follow-btn">Bandcamp</a>
+            </div>
+          </div>
+        </section>
+      </div> <!-- End #music-tab -->
+
+      <div id="cv-tab" class="tab-content">
+        <section class="cv-container">
+          <div class="cv-header">
+            <h2 class="section-title lang-es">Mi Currículum</h2>
+            <h2 class="section-title lang-en hidden">My CV</h2>
+            
+            <!-- Download Button ES -->
+            <a href="cv/CV_Victor_Valenzuela_Martinez_2026_ES.pdf" download class="download-btn cv-main-btn lang-es">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Descargar CV (PDF)</span>
+            </a>
+
+            <!-- Download Button EN -->
+            <a href="cv/CV_Victor_Valenzuela_Martinez_2026_EN.pdf" download class="download-btn cv-main-btn lang-en hidden">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+
+          <div class="cv-viewer-container">
+            <!-- Viewer ES -->
+            <iframe 
+              src="cv/CV_Victor_Valenzuela_Martinez_2026_ES.pdf#view=FitH" 
+              class="lang-es"
+              width="100%" 
+              height="800px" 
+              style="border: none; border-radius: 12px; background: rgba(255,255,255,0.05);"
+            >
+              <p>Tu navegador no puede mostrar este PDF. <a href="cv/CV_Victor_Valenzuela_Martinez_2026_ES.pdf">Haz clic aquí para descargarlo.</a></p>
+            </iframe>
+
+            <!-- Viewer EN -->
+            <iframe 
+              src="cv/CV_Victor_Valenzuela_Martinez_2026_EN.pdf#view=FitH" 
+              class="lang-en hidden"
+              width="100%" 
+              height="800px" 
+              style="border: none; border-radius: 12px; background: rgba(255,255,255,0.05);"
+            >
+              <p>Your browser cannot display this PDF. <a href="cv/CV_Victor_Valenzuela_Martinez_2026_EN.pdf">Click here to download it.</a></p>
+            </iframe>
+          </div>
+        </section>
+      </div> <!-- End #cv-tab -->
     </div>
 
     <footer>

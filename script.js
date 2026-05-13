@@ -14,12 +14,36 @@ function updateLanguageVisibility() {
     esElements.forEach((el) => el.classList.remove("hidden"));
     enElements.forEach((el) => el.classList.add("hidden"));
     document.documentElement.lang = "es";
+    document.title = "MiPortfolio | Mis Videojuegos";
   } else {
     esElements.forEach((el) => el.classList.add("hidden"));
     enElements.forEach((el) => el.classList.remove("hidden"));
     document.documentElement.lang = "en";
+    document.title = "MyPortfolio | My Video Games";
   }
 }
+
+// Tab Switching Logic
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const targetTab = btn.getAttribute("data-tab");
+
+    // Update buttons
+    tabButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // Update content
+    tabContents.forEach((content) => {
+      content.classList.remove("active");
+      if (content.id === `${targetTab}-tab`) {
+        content.classList.add("active");
+      }
+    });
+  });
+});
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -96,6 +120,9 @@ window.addEventListener("scroll", () => {
   } else {
     header.classList.remove("scrolled");
   }
+  
+  // Update scroll variable for fluid CSS effects
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
 const observerOptions = {

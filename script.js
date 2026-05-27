@@ -14,12 +14,12 @@ function updateLanguageVisibility() {
     esElements.forEach((el) => el.classList.remove("hidden"));
     enElements.forEach((el) => el.classList.add("hidden"));
     document.documentElement.lang = "es";
-    document.title = "MiPortfolio | Mis Videojuegos";
+    document.title = "MiPortfolio | Mis Videojuegos y Composiciones";
   } else {
     esElements.forEach((el) => el.classList.add("hidden"));
     enElements.forEach((el) => el.classList.remove("hidden"));
     document.documentElement.lang = "en";
-    document.title = "MyPortfolio | My Video Games";
+    document.title = "MyPortfolio | My Video Games and Compositions";
   }
 }
 
